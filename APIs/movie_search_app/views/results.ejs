@@ -1,0 +1,14 @@
+<h1>Results Page!!!</h1>
+<ul>
+  <% data["Search"].map(m => { %>
+  <li>
+    <strong><%= m["Title"] %></strong> - <%= m["Year"] %>
+  </li>
+  <% }) %>
+</ul>
+
+<a href="/">Search Again</a>
+
+<form action="/" method="GET">
+  <button>Back</button>
+</form>
